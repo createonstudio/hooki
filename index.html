@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F7F2EA">
+<title>450+ najlepszych hooków</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300..700&family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: CreateOn in daylight. The same fabric as the catalog, redrawn in
+   cream, sand and terracotta, hangs only behind the cover; below it the page
+   is calm paper for working on a phone: sticky toolbar, a "losuj hook"
+   spotlight, then the hook cards. Placeholders like [problem] are marked so
+   the reader sees at a glance what to fill in. */
+:root {
+  --bg: #F7F2EA;
+  --paper: #FFFDF9;
+  --ink: #1B1A3A;
+  --soft: #4D4A5C;
+  --faint: #8B8597;
+  --line: #E7DDD0;
+  --sand: #EEDFCD;
+  --terra: #A9552F;
+  --terra-bright: #C4704A;
+  --terra-tint: #F6E3D6;
+  --navy: #1B1866;
+  --on-terra: #FFFFFF;
+  --fold-a: #EADBC8; --fold-b: #F8EFE4; --fold-c: #D9A487; --fold-deep: #CDB8A2;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15131D; --paper: #1D1A27; --ink: #F3EEE6; --soft: #C9C3BA; --faint: #8F889A; --line: #2E2A3A;
+    --sand: #2A2533; --terra: #EE9A72; --terra-bright: #F2A883; --terra-tint: #3A2620; --navy: #B9B6FF; --on-terra: #1A0F0A;
+    --fold-a: #2B2433; --fold-b: #3A2E35; --fold-c: #8C4E35; --fold-deep: #1A1620; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15131D; --paper: #1D1A27; --ink: #F3EEE6; --soft: #C9C3BA; --faint: #8F889A; --line: #2E2A3A;
+  --sand: #2A2533; --terra: #EE9A72; --terra-bright: #F2A883; --terra-tint: #3A2620; --navy: #B9B6FF; --on-terra: #1A0F0A;
+  --fold-a: #2B2433; --fold-b: #3A2E35; --fold-c: #8C4E35; --fold-deep: #1A1620; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 96px;
+}
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--terra); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; }
+
+/* Cover with daylight fabric */
+.cover-band { position: relative; margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px))); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); overflow: hidden; }
+#fabric { position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%); mask-image: linear-gradient(180deg, #000 55%, transparent 100%); }
+.cover { position: relative; max-width: 1180px; margin: 0 auto; padding-block: 64px 72px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); gap: 40px; align-items: center; }
+@media (max-width: 780px) { .cover { grid-template-columns: minmax(0, 1fr); padding-block: 36px 48px; gap: 28px; } .cover-img { order: -1; max-width: 240px; } }
+.cover-card { background: color-mix(in srgb, var(--paper) 88%, transparent); border: 1px solid var(--line); border-radius: 28px; padding: clamp(24px, 4vw, 44px); display: grid; gap: 18px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 30px 60px -30px rgba(80, 40, 20, .25); }
+.wordmark { font-family: var(--display); font-weight: 500; font-size: 24px; line-height: 1; color: var(--ink); }
+.wordmark i { color: var(--terra); }
+.wordmark small { display: block; font-family: var(--sans); font-size: 9px; letter-spacing: .5em; color: var(--faint); margin-top: 6px; }
+.pill { justify-self: start; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; color: var(--terra); background: var(--terra-tint); border-radius: 999px; padding: 6px 16px; }
+h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: clamp(44px, 7vw, 84px); line-height: .95; letter-spacing: -.03em; text-wrap: balance; }
+h1 .num { color: var(--terra); font-style: italic; font-weight: 600; }
+.cover-sub { font-size: 12px; letter-spacing: .3em; text-transform: uppercase; color: var(--soft); }
+.cover-sub b { color: var(--ink); }
+.lead { margin: 0; color: var(--soft); max-width: 56ch; }
+.helps { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+@media (max-width: 560px) { .helps { grid-template-columns: minmax(0, 1fr); } }
+.helps li { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px 10px 36px; position: relative; font-size: 14.5px; color: var(--soft); line-height: 1.4; }
+.helps li::before { content: "✓"; position: absolute; left: 14px; top: 10px; color: var(--terra); font-weight: 700; }
+.cta { justify-self: start; display: inline-flex; gap: 10px; align-items: center; text-decoration: none; background: var(--terra); color: var(--on-terra); font-weight: 600; padding: 13px 26px; border-radius: 999px; transition: transform .2s ease; }
+.cta:hover { transform: translateY(-2px); }
+.cover-img img { width: 100%; display: block; border-radius: 18px; box-shadow: 0 30px 60px -24px rgba(80, 40, 20, .4); }
+
+/* How to use */
+.how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 8px; }
+@media (max-width: 780px) { .how { grid-template-columns: minmax(0, 1fr); } }
+.how div { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; display: grid; gap: 4px; }
+.how b { font-family: var(--mono); font-weight: 500; font-size: 12px; color: var(--terra); }
+.how span { color: var(--soft); font-size: 15px; }
+.how mark { background: var(--terra-tint); color: var(--terra); border-radius: 5px; padding: 0 4px; }
+
+/* Toolbar */
+.toolbar { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 8px); z-index: 3; margin: 44px 0 18px; padding: 12px; display: grid; gap: 10px; background: color-mix(in srgb, var(--paper) 92%, transparent); border: 1px solid var(--line); border-radius: 22px; -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 14px 30px -24px rgba(40, 20, 10, .35); scroll-margin-top: 8px; }
+.row { display: flex; gap: 8px; }
+.search { position: relative; flex: 1; min-width: 0; }
+.search svg { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--faint); pointer-events: none; }
+.search input { width: 100%; font: 400 16px var(--sans); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px 12px 44px; outline: none; }
+.search input::placeholder { color: var(--faint); }
+.search input:focus { border-color: var(--terra); }
+.shuffle { flex: none; display: inline-flex; gap: 8px; align-items: center; font: 600 15px var(--sans); color: var(--on-terra); background: var(--terra); border: 0; border-radius: 14px; padding: 0 18px; cursor: pointer; }
+.shuffle svg { width: 17px; height: 17px; }
+@media (max-width: 480px) { .shuffle span { display: none; } .shuffle { padding: 0 14px; } }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, #000 92%, transparent); mask-image: linear-gradient(90deg, #000 92%, transparent); }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; font: 500 14px var(--sans); color: var(--soft); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; white-space: nowrap; display: inline-flex; gap: 6px; align-items: center; }
+.chip em { font-style: normal; font-family: var(--mono); font-size: 11px; color: var(--faint); }
+.chip:hover { border-color: var(--terra); color: var(--ink); }
+.chip.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip.active em { color: inherit; opacity: .7; }
+.status { display: flex; justify-content: space-between; gap: 10px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--faint); padding: 0 4px; }
+.status b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Spotlight */
+.spot { margin-bottom: 18px; background: var(--ink); color: var(--paper); border-radius: 24px; padding: clamp(22px, 4vw, 36px); display: grid; gap: 14px; position: relative; overflow: hidden; }
+.spot::after { content: ""; position: absolute; right: -60px; top: -60px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--terra-bright) 55%, transparent), transparent 70%); pointer-events: none; }
+.spot .label { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; opacity: .7; }
+.spot p { margin: 0; font-family: var(--display); font-weight: 600; font-size: clamp(24px, 3.4vw, 36px); line-height: 1.15; letter-spacing: -.01em; max-width: 30ch; position: relative; z-index: 1; }
+.spot .ph { color: var(--terra-bright); background: none; font-style: italic; font-weight: inherit; padding: 0; }
+.spot .acts { display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 1; }
+.spot button { font: 600 14px var(--sans); border-radius: 999px; padding: 9px 18px; cursor: pointer; border: 1px solid color-mix(in srgb, var(--paper) 35%, transparent); background: transparent; color: var(--paper); }
+.spot button.primary { background: var(--terra-bright); border-color: var(--terra-bright); color: #1A0F0A; }
+
+/* Cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.card { content-visibility: auto; contain-intrinsic-size: auto 200px; background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 18px 18px 14px; display: grid; grid-template-rows: auto 1fr auto; gap: 12px; transition: border-color .2s ease, transform .2s ease; }
+.card:hover { border-color: var(--terra); transform: translateY(-2px); }
+.meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.no { font-family: var(--mono); font-size: 12px; color: var(--terra); font-variant-numeric: tabular-nums; }
+.cat { font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--faint); }
+.text { margin: 0; font-size: 17px; line-height: 1.45; font-weight: 500; color: var(--ink); }
+.ph { color: var(--terra); background: var(--terra-tint); border-radius: 6px; padding: 0 4px; font-weight: 600; }
+.text mark { background: color-mix(in srgb, var(--navy) 18%, transparent); color: inherit; border-radius: 3px; }
+.acts-row { display: flex; gap: 8px; }
+.copy { flex: 1; display: inline-flex; justify-content: center; align-items: center; gap: 8px; font: 600 14px var(--sans); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; cursor: pointer; }
+.copy:hover { border-color: var(--terra); color: var(--terra); }
+.copy.done { background: var(--terra); border-color: var(--terra); color: var(--on-terra); }
+.fav { flex: none; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); background: var(--bg); color: var(--faint); cursor: pointer; }
+.fav svg { width: 18px; height: 18px; }
+.fav[aria-pressed="true"] { color: var(--terra); border-color: var(--terra); background: var(--terra-tint); }
+.fav[aria-pressed="true"] svg { fill: currentColor; }
+.empty { grid-column: 1 / -1; text-align: center; background: var(--paper); border: 1px dashed var(--line); border-radius: 20px; padding: 48px 20px; color: var(--soft); }
+.empty button { margin-top: 12px; font: 600 14px var(--sans); color: var(--terra); background: none; border: 1px solid var(--terra); border-radius: 999px; padding: 8px 18px; cursor: pointer; }
+
+#toast { position: fixed; z-index: 5; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 24px); transform: translate(-50%, 12px); opacity: 0; pointer-events: none; background: var(--ink); color: var(--paper); font-weight: 600; font-size: 14px; padding: 12px 22px; border-radius: 999px; box-shadow: 0 14px 40px rgba(0,0,0,.25); transition: opacity .25s ease, transform .25s ease; max-width: calc(100% - 32px); text-align: center; }
+#toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+footer { margin-top: 64px; text-align: center; display: grid; gap: 6px; }
+footer .big { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4.4vw, 42px); letter-spacing: -.02em; line-height: 1.1; }
+footer .big em { color: var(--terra); font-weight: 500; }
+footer small { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); }
+@media (prefers-reduced-motion: reduce) { .card, .cta { transition: none; } .card:hover, .cta:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+
+<div class="cover-band">
+  <canvas id="fabric" aria-hidden="true"></canvas>
+  <header class="cover" id="top">
+    <div class="cover-card">
+      <div class="wordmark">create<i>on</i><small>STUDIO</small></div>
+      <div class="pill">Done for you</div>
+      <h1><span class="num">450+</span> najlepszych hooków</h1>
+      <div class="cover-sub"><b>Marketing bez twarzy</b> · Instagram i TikTok</div>
+      <p class="lead">Nie każdy czuje się swobodnie przed kamerą. Jeśli wolisz zachować anonimowość albo skupić się na wartości, którą dajesz odbiorcom, marketing bez pokazywania twarzy wciąż może być bardzo skuteczny. Ta baza zawiera ponad 450 hooków stworzonych z myślą o Instagramie i TikToku. Kamera skierowana jest na treść, nie na Ciebie.</p>
+      <ul class="helps" aria-label="Te hooki pomogą Ci">
+        <li>Przyciągnąć uwagę już w pierwszych sekundach</li>
+        <li>Wzbudzić ciekawość, dzięki której widzowie zostaną dłużej</li>
+        <li>Zwiększyć zaangażowanie treściami, które trafiają w sedno</li>
+        <li>Zwiększyć konwersję, bo Twój przekaz staje się nie do zignorowania</li>
+      </ul>
+      <a class="cta" href="#baza">Zacznij tworzyć lepsze treści <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="cover-img"><img src="c/hooki.jpg" alt="Okładka: 450+ najlepszych hooków na Instagram i TikTok"></div>
+  </header>
+</div>
+
+<div class="wrap">
+  <section class="how" aria-label="Jak korzystać">
+    <div><b>01</b><span>Wybierz kategorię albo kliknij „Losuj hook”, gdy brakuje Ci pomysłu.</span></div>
+    <div><b>02</b><span>Uzupełnij pola oznaczone kolorem, np. <mark>[problem]</mark>, swoją niszą i odbiorcą.</span></div>
+    <div><b>03</b><span>Wstaw hook jako tekst w pierwszych 3 sekundach rolki, na swój estetyczny B-roll.</span></div>
+  </section>
+
+  <div class="toolbar" id="baza">
+    <div class="row">
+      <div class="search">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" id="q" placeholder="Szukaj, np. sprzedaż, błąd, sekret…" aria-label="Szukaj hooka" autocomplete="off">
+      </div>
+      <button class="shuffle" id="shuffle" type="button" aria-label="Losuj hook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg><span>Losuj hook</span></button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="status"><span id="label">Wszystkie hooki</span><span><b id="n">452</b> hooków</span></div>
+  </div>
+
+  <section class="spot" id="spot" hidden aria-live="polite">
+    <div class="label">Wylosowany hook</div>
+    <p id="spotText"></p>
+    <div class="acts">
+      <button class="primary" type="button" id="spotCopy">Kopiuj hook</button>
+      <button type="button" id="spotNext">Losuj kolejny</button>
+      <button type="button" id="spotClose">Zamknij</button>
+    </div>
+  </section>
+
+  <main class="grid" id="grid"></main>
+
+  <footer>
+    <div class="big">Mniej wymyślania. <em>Więcej tworzenia.</em></div>
+    <small>CreateOn Studio · @createonstudio</small>
+  </footer>
+</div>
+
+<div id="toast" role="status"></div>
+
+<script>
+var HOOKS = [["Masz problem ze zwiększeniem sprzedaży? Wypróbuj ten prosty trik, który u mnie zadziałał 10x lepiej!", "sprzedaz"], ["Zastanawiałeś się kiedyś, jak podwoiłam swoją sprzedaż cyfrową, nie pokazując swojej twarzy?", "sprzedaz"], ["3 rzeczy, które MUSISZ zrobić, jeśli chcesz sprzedawać więcej produktów cyfrowych", "sprzedaz"], ["Ta jedna strategia zwiększyła moją sprzedaż online o 30% — oto jak Ty też możesz to zrobić", "sprzedaz"], ["Oto jak zarabiać pieniądze w Internecie, nie spędzając godzin w mediach społecznościowych.", "sprzedaz"], ["Przestań robić [problem] i zacznij widzieć [pożądany wynik] dzięki tej strategii", "sprzedaz"], ["Jeśli chcesz zwiększyć sprzedaż, musisz przestać to robić…", "sprzedaz"], ["Ta prosta zmiana pomogła mi uzyskać [pożądany wynik] w zaledwie 30 dni.", "sprzedaz"], ["Nie musisz mieć ogromnej liczby obserwujących, żeby zarabiać pieniądze — oto jak zacząć.", "sprzedaz"], ["Każdy chce [pożądanego rezultatu], ale oto prawdziwy sposób na jego osiągnięcie.", "sprzedaz"], ["Chciałbyś [osiągnąć cel] bez [zwykłych zmagań]? Oto jak.", "sprzedaz"], ["Oto, co wiedzą odnoszący sukcesy twórcy, a o czym większość ludzi nie wie…", "sprzedaz"], ["Zmagasz się z [problemem]? To może być przełom, którego potrzebujesz.", "sprzedaz"], ["Zastanawiałeś się kiedyś, dlaczego [pożądany rezultat] wydaje się nieosiągalny? To może być powód.", "sprzedaz"], ["Oto jak możesz uzyskać pasywny dochód wprowadzając na rynek tylko jeden produkt.", "sprzedaz"], ["Wykorzystałam tę prostą technikę, aby sprzedać moje produkty cyfrowe — bez konieczności pokazywania twarzy!", "sprzedaz"], ["Czego nikt Ci nie powie o sprzedaży produktów cyfrowych online…", "sprzedaz"], ["Oto jak zautomatyzowałam sprzedaż cyfrową, pozostając za kamerą", "sprzedaz"], ["Myślałeś kiedyś o zarabianiu pieniędzy podczas snu? Oto jak ja to robię.", "sprzedaz"], ["Najczęstszy błąd popełniany w przypadku produktów cyfrowych (i jak go naprawić).", "sprzedaz"], ["Dlaczego więcej osób nie korzysta z tej metody, aby zwiększyć sprzedaż 10-krotnie?", "sprzedaz"], ["3 powody, dla których marketing bezosobowy zmienia zasady gry dla twórców cyfrowych.", "sprzedaz"], ["W ten sposób możesz zarobić 4000 zł miesięcznie, sprzedając produkty cyfrowe, nie pokazując swojej twarzy.", "sprzedaz"], ["Jeśli nie korzystasz z tej sztuczki z cyfrowym produktem, tracisz pieniądze.", "sprzedaz"], ["Jak zarobiłam pierwsze 500 zł w Internecie bez ani jednego selfie!", "sprzedaz"], ["Zmień swoją dodatkową działalność w pełnoetatowe źródło dochodu dzięki tej strategii.", "sprzedaz"], ["Myślisz, że sprzedaż online jest trudna? Wypróbuj tę prostą metodę, dzięki której zarobiłam 10 razy więcej.", "sprzedaz"], ["5 narzędzi, które pomogły mi zwiększyć sprzedaż cyfrową z dnia na dzień.", "sprzedaz"], ["Co robią za kulisami odnoszący sukcesy twórcy cyfrowi, o czym inni nie wiedzą", "sprzedaz"], ["Ciekawi Cię, jak podwoiłam liczbę swoich obserwujących ORAZ sprzedaż?", "sprzedaz"], ["Skorzystaj z tej prostej formuły, aby sprzedawać więcej, nie pokazując swojej twarzy.", "sprzedaz"], ["Sekret przekształcania jednego produktu cyfrowego w wiele strumieni dochodu.", "sprzedaz"], ["3 sposoby, aby wyróżnić Twoje produkty cyfrowe w Internecie.", "sprzedaz"], ["Jak zbudowałam pasywny strumień dochodu, nawet nie pokazując swojej twarzy.", "sprzedaz"], ["Jak sprawiam, że klienci przychodzą do mnie — bez twarzy, tylko strategia!", "sprzedaz"], ["Bezosobowy sposób sprzedaży produktów cyfrowych, o którym nikt nie mówi.", "sprzedaz"], ["Oto dlaczego bezimienni twórcy zarabiają więcej pieniędzy niż kiedykolwiek.", "sprzedaz"], ["Jak stworzyć viralowy post, który sprzedaje — bez konieczności pokazywania twarzy.", "sprzedaz"], ["Ta jedna rzecz całkowicie odmieniła moje podejście do marketingu cyfrowego!", "sprzedaz"], ["Chcesz wyprzedać swoje produkty cyfrowe? Zacznij to robić!", "sprzedaz"], ["Dokładna strategia, której użyłam, aby potroić sprzedaż w ciągu jednego miesiąca.", "sprzedaz"], ["3 rzeczy, które hamują rozwój Twojego biznesu online.", "sprzedaz"], ["Chcesz zobaczyć moją tajną broń w sprzedaży cyfrowej?", "sprzedaz"], ["Jak budować zaufanie klientów, nawet jeśli nigdy nie zobaczą Cię osobiście", "sprzedaz"], ["Ta jedna sztuczka pomoże Ci sprzedawać produkty cyfrowe jak świeże bułeczki.", "sprzedaz"], ["Jeśli nadal stosujesz [wstaw przestarzałą metodę], musisz to obejrzeć!", "porady"], ["Ten [produkt/usługa] zmienił moje życie i może zmienić również Twoje. Oto dlaczego…", "recenzje"], ["Oto dlaczego jesteś kiepski w [umiejętności] i jak to naprawić", "porady"], ["A co jeśli powiedziałabym ci, że [nie musisz tego robić], żeby uzyskać [pożądany wynik]?", "porady"], ["Nie oglądaj tego, jeśli nie traktujesz [osiągnięcia] poważnie", "stop"], ["Oto jak uzyskać [pożądane rezultaty] bez robienia [problemu]", "porady"], ["[Liczba] przełomowych [niszowych] sztuczek, których odkrycie zajęło mi [lata]", "porady"], ["Czego NIKT ci nie mówi o zostaniu [stanowiskiem]", "porady"], ["Jak 10-krotnie zwiększyć [wskaźnik] dzięki temu prostemu [sztuczce]", "porady"], ["[Liczba] rzeczy, które chciałbym wiedzieć, zaczynając [niszę]", "porady"], ["Jak zarabiam [X$/miesiąc] tylko dzięki [prostej czynności]", "porady"], ["Przygotujcie się! \"Zdradzam całą prawdę o ___\"", "ciekawosc"], ["[Zawyżona liczba] błędów, których należy UNIKAĆ, jeśli chcesz [osiągnąć]", "bledy"], ["MYŚL JAK [osoba sukcesu], stosując te [liczba] kluczowych nastawień", "porady"], ["Nie uwierzysz, co dzieje się za kulisami [popularne konto]", "ciekawosc"], ["Zastanawiałeś się kiedyś, dlaczego niektórzy twórcy cyfrowi zarabiają więcej niż inni? Oto dlaczego.", "sprzedaz"], ["Marketing bezosobowy to nie tylko trend — to maszyna do zarabiania pieniędzy!", "sprzedaz"], ["Nigdy nie sądziłam, że mogę zarabiać pieniądze w Internecie, dopóki tego nie spróbowałam.", "sprzedaz"], ["Tajemnica mojego sukcesu w sprzedaży cyfrowej, która kryje się za kulisami.", "sprzedaz"], ["Dlaczego każdy twórca treści cyfrowych powinien stosować tę anonimową strategię.", "sprzedaz"], ["Dowiedz się, jak tworzyć zachwycające produkty cyfrowe bez pokazywania swojej twarzy.", "sprzedaz"], ["Oto jak sprzedać swój produkt cyfrowy, zachowując anonimowość.", "sprzedaz"], ["3 sposoby na zwiększenie sprzedaży online za pomocą marketingu bezosobowego.", "sprzedaz"], ["Ta strategia pomaga mi za każdym razem wyprzedawać wszystkie moje produkty cyfrowe.", "sprzedaz"], ["Przestań popełniać ten powszechny błąd w przypadku swoich produktów cyfrowych.", "sprzedaz"], ["Jak przekształcić jeden pomysł w udaną linię produktów cyfrowych.", "sprzedaz"], ["Ta prosta wskazówka może zwiększyć Twoją sprzedaż cyfrową dziesięciokrotnie — czy z niej korzystasz?", "sprzedaz"], ["Jak rozwinąłam swój sklep internetowy, nie uruchamiając go ani razu i nie pokazując swojej twarzy.", "sprzedaz"], ["Nie uwierzysz, jak łatwo jest sprzedawać produkty cyfrowe dzięki tej strategii.", "sprzedaz"], ["Masz dość walki z [problemem]? Oto sekret, dzięki któremu bez wysiłku osiągniesz [pożądany rezultat].", "sprzedaz"], ["Oglądaj do końca, bo ujawniam coś wielkiego i nie chcesz tego przegapić!", "stop"], ["„Nudna” strategia, która pozwoliła mi przejść na emeryturę w [młodym wieku]", "historia"], ["Od dna do gwiazdy rocka... Oto moja historia powrotu wbrew przeciwnościom losu", "historia"], ["[Typ ludzi] TAJEMNICA [osiągnięcia pożądanego rezultatu]", "ciekawosc"], ["Masz dość [problemu]? Oto jedna wskazówka, która zmieniła WSZYSTKO", "porady"], ["Masz dość [negatywnego wyniku]? Ten film pokaże Ci, jak zamiast tego [osiągnąć pozytywny wynik]", "porady"], ["Ujawniono: Sztuczki, których [niezwykle skuteczny guru] używa, aby tobą manipulować", "kontrowersje"], ["Jak udało mi się osiągnąć dochód rzędu 6 cyfr", "sprzedaz"], ["Jak [osoba/firma] przekształciła [działanie] w [wynik] wart [X milionów złotych]", "porady"], ["[Zawyżona liczba] kłamstwa, w które wierzysz, jeśli chodzi o bogacenie się", "mity"], ["Nie przewijaj dalej! Jeśli kochasz _______, to jest dla CIEBIE!", "stop"], ["Mój niezawodny codzienny plan na [pożądany wynik] w [krótkim czasie]", "porady"], ["Uważajcie, cwaniacy...brzydka prawda kryjąca się za [branżą, którą gloryfikujemy]", "kontrowersje"], ["90-dniowy „skrót” do zostania [lukratywnym zawodem]", "kontrowersje"], ["Rzuć pracę w 30 dni — rzucam ci wyzwanie, spróbuj TEGO", "kontrowersje"], ["Jak swoją największą porażkę zamieniłam w największy sukces — moja historia może Cię zaskoczyć.", "historia"], ["Ta jedna decyzja zmieniła wszystko. Oto, co wydarzyło się później.", "historia"], ["Czego nauczyłam się po swojej największej porażce – to może wszystko zmienić.", "historia"], ["Nie uwierzysz, jak podniosłam się po [wyzwaniu] — mój sekret ujawniony!", "historia"], ["Od zmagań do sukcesu – moja podróż i lekcje, których nauczyłam się po drodze.", "historia"], ["Zostań do końca, by zobaczyć nieoczekiwany zwrot akcji, który odmienił moje życie.", "historia"], ["Jak sięgnięcie dna nauczyło mnie jednej rzeczy, której potrzebowałam, aby odnieść sukces.", "historia"], ["Moment, który wszystko odmienił – mój nieoczekiwany przełom.", "historia"], ["Jeśli kiedykolwiek miałeś ochotę się poddać, to jest to dla ciebie.", "stop"], ["Nikt ci nie powie, jak przekształcić porażki w powroty.", "historia"], ["Jak przeszłam od zera do rozkwitu – moja nieoczekiwana podróż.", "historia"], ["Nie uwierzysz, jak blisko byłam poddania się — a potem to się stało.", "historia"], ["Punkt zwrotny, który pomógł mi przejść od zmagań do rozkwitu.", "historia"], ["Oto, co zrobiłam inaczej, kiedy nic innego nie działało.", "historia"], ["Moja historia o tym, jak zamieniać przeszkody w możliwości — oto, jak Ty też możesz to zrobić.", "historia"], ["Zmanifestuj TO, korzystając z mojej 5-minutowej codziennej rutyny", "wyobraz"], ["Kiedyś czułam się tak [wrażliwa emocja], dopóki...", "historia"], ["Czego się nauczyłam, przechodząc od 0 do [X] złotych w ciągu 12 miesięcy, sprzedając [produkt]", "sprzedaz"], ["[Numer] przełomowe triki życiowe, o których nauczyciele NIGDY ci nie mówili", "ciekawosc"], ["Powiedzieli, że to niemożliwe... Oto jak udało mi się [imponujący wynik] w zaledwie [okres czasu]", "historia"], ["Sprawdźmy, ile [X: kurs, produkt] zarobił w ostatnim [okresie czasu]…", "ciekawosc"], ["Potrzebuję, aby wszyscy inni w [X] obiecali [Y]", "kontrowersje"], ["Dobrze znana [firma lub osoba] mogła właśnie zabić [X]", "kontrowersje"], ["Nie mam teraz słów, żeby to opisać, to szaleństwo", "kontrowersje"], ["Jeśli chcesz zacząć [X], ale boisz się [Y]", "stop"], ["Wiesz kto właśnie trollował [X]", "kontrowersje"], ["[Znana osoba] właśnie popełniła ogromny błąd", "kontrowersje"], ["Jakie dziwne rzeczy ludzie nie wiedzą o [X]", "ciekawosc"], ["To jest najciekawszy fakt ostatniej dekady", "ciekawosc"], ["Oto 5 sposobów na zrobienie _______ (zostań na 5 sposobów, bo to mój ulubiony)", "porady"], ["Nie sądzę, żeby ludzie rozumieli, jak [X]", "ciekawosc"], ["Czy tylko ja nie wiedziałam [X]", "ciekawosc"], ["Każdy szuka [podstawowego pragnienia człowieka]", "porady"], ["To jest sekret...", "ciekawosc"], ["[Temat] wyjaśniony dla [grupy]", "porady"], ["Jeśli jesteś [X], prawdopodobnie powinieneś sprawdzić [Y]", "stop"], ["Nie rób [X], zrób [Y] dla lepszego [wyniku]", "porady"], ["Jeśli chcesz zaimponować komuś w sprawie [X], zrób [Y]", "porady"], ["Jeden z naszych [X] kosztował [Y], drugi [X] – widzisz różnicę?", "ciekawosc"], ["Okej, chłopaki, muszę wam coś pokazać", "stop"], ["Tylko krótkie ogłoszenie w ramach działalności publicznej", "stop"], ["Czy ktoś jeszcze może się utożsamić z ______? Proszę, powiedzcie mi, że nie tylko ja tak mam!", "porady"], ["Twoja zdolność do [X] jest w rzeczywistości determinowana przez [Y]", "ciekawosc"], ["Niedawno walczyłam [X] z [Y] tylko dla ciebie", "porady"], ["Z Twojej perspektywy jesteś [X], który robi [coś znaczącego] z [czymś, co oznacza niewielki wysiłek]", "ciekawosc"], ["Nigdy nie [przymiotnik] nauczę się tego", "porady"], ["Pokażę ci, jak mieć najlepszy X w swoim życiu", "porady"], ["Zamierzam to przesadzić [X]", "kontrowersje"], ["To zwali Cię z nóg", "ciekawosc"], ["Ujawnianie [przymiotnika] ludzi na [Y]", "kontrowersje"], ["Jeśli jutro umrę, oto wszystko, co chcę, żebyś wiedział o [X]", "ciekawosc"], ["A co jeśli powiedziałbym ci, że [nie musisz tego robić], żeby uzyskać [pożądany wynik]?", "porady"], ["Dzwonię do wszystkich [Twoich idealnych klientów], którzy chcą [usługi, którą oferujesz]. Powinniśmy być przyjaciółmi.", "stop"], ["Najważniejsza rzecz, której nauczyłam się od…", "porady"], ["Obiecuję, że ta jedna poprawka w ____ zwiększy Twoje wyniki 10-krotnie", "porady"], ["[liczba] niezbędnych umiejętności dla [niszowej branży]", "porady"], ["Oto _____ Założę się, że jeszcze nie próbowałeś", "ciekawosc"], ["Oglądaj dalej, jeśli…", "stop"], ["Ukradnij moją strategię [wstaw pragnienie idealnego klienta] w kółko", "porady"], ["Odkryj rady, które zmienią zasady gry i przydadzą się każdemu profesjonaliście z [branży]!", "porady"], ["Krok po kroku planujesz [wstaw idealne życzenia klienta]", "porady"], ["Jeśli zaczynasz od [grupy wiekowej], oto [liczba rzeczy], które Ci pomogą [cel]", "porady"], ["Problem polega na tym, że robisz [X] zamiast [Y]", "porady"], ["Nie wiem, dlaczego to się teraz nie zmienia, ale____", "kontrowersje"], ["X rzeczy, o których chciałbym wiedzieć wcześniej, ale nie dowiedziałam się, więc się nimi z wami dzielę...", "ciekawosc"], ["Oto dokładne ____, które musisz znać jako ____", "ciekawosc"], ["5 rzeczy, których należy unikać, aby _____", "bledy"], ["Ta osoba zarabia [kwota xx dolarów] [okres czasu] w [niszy / robiąc jedną rzecz]", "porady"], ["3 czerwone flagi przy wyborze _____", "bledy"], ["Oto co naprawdę dzieje się z ____", "ciekawosc"], ["Nie miałam zamiaru się tym dzielić, ale ______", "ciekawosc"], ["Zrobienie tego zmieniło wszystko: ______", "porady"], ["Nie mogę uwierzyć, że nie zacząłam tego robić wcześniej", "porady"], ["[X] całkowicie odmienił grę", "ciekawosc"], ["Powód, dla którego nikt nigdy ci nie powiedział o _____", "ciekawosc"], ["Jeśli nadal jesteś _____, marnujesz swój czas", "kontrowersje"], ["Nie zrobienie tego zniszczy ______", "kontrowersje"], ["Jeśli próbujesz [X], trafiłeś we właściwe miejsce", "stop"], ["To było utrzymywane w tajemnicy przez zbyt długi czas", "ciekawosc"], ["Najbardziej efektywnym sposobem jest——", "porady"], ["Dowiedz się, jak udało mi się [osiągnąć] w zaledwie [czasie]", "porady"], ["Musisz to obejrzeć, jeśli ____", "stop"], ["Nie wierz, gdy ludzie mówią ci _____", "mity"], ["Rozstrzygnijmy to raz na zawsze… [debata/kontrowersyjne pytanie]", "kontrowersje"], ["Więcej osób powinno dowiedzieć się o….", "ciekawosc"], ["Jeśli interesuje Cię [temat], to…", "stop"], ["Więc chcesz zacząć [niszę], ale jesteś zbyt pochłonięty [rozproszeniem].", "stop"], ["Zobaczmy, jak szybko mogę [zrobić coś, co pokaże Twoje umiejętności w tej dziedzinie]", "porady"], ["Nie powinieneś oglądać tego filmu, jeśli nie interesuje Cię...", "stop"], ["Tylko ja tak mam, czy...", "ciekawosc"], ["Szybkie przypomnienie…", "stop"], ["Dzisiaj był najgorszy dzień w moim życiu", "historia"], ["Zepsułam _______", "historia"], ["Dzisiaj wydarzyło się coś SZALONEGO _____", "historia"], ["Oto kompletny przewodnik po _____", "ciekawosc"], ["Nie ma nic bardziej bolesnego niż _______", "kontrowersje"], ["Może to być kontrowersyjne, ale ______", "kontrowersje"], ["Jak się dowiedziałam, że _____", "historia"], ["To wydaje się nielegalne, wiedzieć _____", "kontrowersje"], ["Uświadomiłam sobie, że _____", "historia"], ["To przypomnienie, aby zrobić _____", "stop"], ["Ten [trik/hack] zaoszczędzi Ci wiele godzin.", "porady"], ["Właśnie znalazłam najlepszy ____ i muszę się nim z wami podzielić", "ciekawosc"], ["Czy kiedykolwiek zastanawiałeś się, jak ____", "ciekawosc"], ["Ta prosta zmiana sposobu myślenia zmieniła wszystko w moim życiu — dowiedz się jak.", "historia"], ["Robiłam tę jedną rzecz każdego dnia przez 30 dni, a wyniki mnie zaszokowały.", "historia"], ["Jeśli kiedykolwiek czułeś się zagubiony, to może być dokładnie to, czego potrzebujesz.", "stop"], ["Nie uwierzysz, co się stało, kiedy w końcu podjęłam ten krok.", "historia"], ["Nigdy nie sądziłam, że uda mi się to osiągnąć. Oto, co zrobiło różnicę.", "historia"], ["Oto rada, której chciałbym, żeby ktoś udzielił mi wcześniej.", "porady"], ["Co się stało, gdy przestałam słuchać sceptyków.", "historia"], ["W ten sposób zamieniłam swoją pasję w zysk. Ty też możesz to zrobić.", "historia"], ["Jeśli chcesz rzucić, obejrzyj najpierw to.", "stop"], ["Jedna rada, która całkowicie zmieniła moją perspektywę.", "porady"], ["Od pomijanego do przepełnionego — jak to wszystko zmieniłam.", "historia"], ["Mój największy błąd stał się moją największą szansą. Oto jak.", "historia"], ["Nie uwierzysz, czego się nauczyłam po 5 porażkach.", "historia"], ["Próbowałam każdej metody, ale ta w końcu zadziałała.", "historia"], ["Prawdziwy powód, dla którego większość ludzi nie odnosi sukcesów — i jak tego uniknąć", "mity"], ["Spróbujmy razem czegoś nowego", "porady"], ["Ten trend przejmuje [platformę] i musiałam go wypróbować", "ciekawosc"], ["Przygotuj się na poważne wskazówki [wstaw temat]", "porady"], ["Ujawniam swoje sekrety sukcesu [wstaw temat]", "ciekawosc"], ["Tak pozostaję zmotywowana do [X]", "porady"], ["Jak [pomnożyć] swoje [pragnienie] na/w [platformie]", "porady"], ["[funkcja / aktywność] nie działa. Oto dlaczego…", "porady"], ["Jak wykonać [pożądaną czynność] bez [żmudnej czynności / czasochłonnej]", "porady"], ["Twoje [X] nie jest [czymś negatywnym], musisz po prostu [Y]", "porady"], ["Gorąco [przykład zawodu: fotografowie] nie blokujcie tego", "kontrowersje"], ["Prawda o [X]", "mity"], ["Połóż palec, jeśli [X]", "stop"], ["To jest twój znak do [X]", "stop"], ["Chociaż wszyscy na Twoim FYP mówią Ci coś innego, oto prawda", "mity"], ["Jeśli masz mniej niż [wiek] i nie jesteś [X], posłuchaj!", "stop"], ["Studiowałam ponad [liczba] [umiejętność/osoba/branża] i dlatego nie jesteś [pożądany wynik]", "ciekawosc"], ["10 [wstaw podpowiedzi dotyczące narzędzi] Chciałbym wiedzieć wcześniej", "ciekawosc"], ["Zmienię twoje zdanie na temat [X] w ciągu [czas] sekund!", "ciekawosc"], ["Czy ktoś zupełnie obcy może mnie prześcignąć / przekonać w [X]?", "ciekawosc"], ["Oto dlaczego wybrałam [X] spośród innych.", "porady"], ["Trzy [X] sztuczki, które mnie zadziwiły (szczególnie ostatnia).", "ciekawosc"], ["Dlaczego nikt nie mówi o [X]?", "ciekawosc"], ["Następnym razem, gdy będziesz robić [X], spróbuj tego!", "porady"], ["Wiedząc to, co wiem teraz, oto, co zrobiłbym inaczej w mojej [niszowej] podróży", "porady"], ["Chciałbym móc cofnąć się w czasie i powiedzieć to sobie [w poprzednim wieku]", "porady"], ["Gdybym wiedział o tym przed rozpoczęciem [podróży w niszy], osiągnąłbym [osiągnięcie] znacznie szybciej", "ciekawosc"], ["Od tamtej pory moje życie stało się lepsze.", "historia"], ["Jako ktoś, kto już spełnił [marzenie], chciałbym przedstawić wam kilka wskazówek, jak osiągnąć je szybciej.", "porady"], ["Krzyczałabym to do siebie sprzed lat, gdybym tylko mogła cofnąć czas", "historia"], ["Jeśli nie chcesz tracić więcej czasu na [swoją podróż w niszy], oto kilka rad od kogoś, kto to zrobił.", "porady"], ["Z perspektywy czasu widzę, że robimy tak wiele niezbędnych rzeczy, próbując [osiągnąć X]. Jako ktoś, kto już pokonał [ból], mam dla ciebie kilka zmieniających życie mądrości, których musisz posłuchać.", "porady"], ["Drażni mnie to tak bardzo, że...", "kontrowersje"], ["Jeśli kiedykolwiek zastanawiałeś się, jak działa [zjawisko w niszy], porozmawiajmy o tym. Jestem [Twój tytuł].", "porady"], ["Nie chcę być zwiastunem złych wieści, ale...", "kontrowersje"], ["[Zjawisko niszy] nie jest tak proste, jak się wydaje", "porady"], ["Oto coś, o czym chciałbym wiedzieć wcześniej", "ciekawosc"], ["Dla mojej męskiej publiczności", "stop"], ["Kup swojej dziewczynie ______", "recenzje"], ["Nie kupuj tego, kup zamiast tego to.", "recenzje"], ["Mój sposób na X dla X.", "porady"], ["Moją toksyczną cechą jest myślenie, że mogę__", "kontrowersje"], ["Zatrzymaj przewijanie..", "stop"], ["To powinno być nielegalne", "kontrowersje"], ["Ostrzeżenie dla [docelowego rynku]", "stop"], ["To znak, że…", "stop"], ["POV: __* (Punkt widzenia)", "ciekawosc"], ["Niepopularna opinia", "kontrowersje"], ["Mam nadzieję, że dotrze to do właściwej publiczności", "stop"], ["Co by było, gdybyśmy jutro zostali zaatakowani bombą atomową i [coś, czego ludzie nie zauważyli w produkcie] pomyślcie o tym", "kontrowersje"], ["To ci się spodoba", "stop"], ["Wypróbowałam każdy X, więc Ty nie musisz. Oto wyniki.", "recenzje"], ["X osób przestaje przewijać.", "stop"], ["To jest dla X osób, więc jeśli nie chcesz, przewijaj dalej", "stop"], ["Jeśli jesteś taki jak ja i robisz X, to ten jest dla ciebie.", "stop"], ["Rzeczy, które kupiłam dzięki TikTokowi.", "recenzje"], ["Oficjalnie produkt X jest moim wyborem numer jeden.", "recenzje"], ["Ten film jest przeznaczony tylko dla X osób, więc jeśli nie jesteś ich odbiorcą, przewijaj dalej.", "stop"], ["Czy Ty X chcesz się pozbyć X / chcesz zdobyć X?", "ciekawosc"], ["Czy wiesz, że", "ciekawosc"], ["Zaczekaj! Nie odchodź nigdzie, chcę ci coś pokazać.", "stop"], ["Nie przewijaj dalej, jeśli chcesz X.", "stop"], ["Ten bezpieczny X jest czymś, czego potrzebujesz, jeśli chcesz X.", "porady"], ["Obiecuję, że nigdy nie zrobiłeś X.", "ciekawosc"], ["3 wskazówki jak pozbyć się X.", "porady"], ["Zanim przewiniesz", "stop"], ["5 wskazówek, jak zdobyć X.", "porady"], ["To co zamawiam kontra to co otrzymałam.", "recenzje"], ["(odpowiedz na komentarz za pomocą wideo).", "porady"], ["Najlepsze produkty X, które wypróbowałam i które naprawdę działają.", "recenzje"], ["Właśnie otrzymałam produkty X i jestem mega podekscytowana.", "recenzje"], ["Kupiłam najlepszy prezent dla mojego byłego.", "recenzje"], ["Dlatego potrzebujesz X.", "porady"], ["Zrób ze mną X (pokaż produkt w użyciu).", "recenzje"], ["Są dni, kiedy nie używam X i dlatego używam X.", "recenzje"], ["Ten [produkt] to jedyny, którego używam w [kontekście] — i pokażę Ci dlaczego", "recenzje"], ["To, czego się nauczyłam po latach walki z [problem], zmienia wszystko.", "historia"], ["Przestań stosować [nieskuteczną metodę] i zacznij widzieć [pożądany rezultat] już dziś.", "porady"], ["Ta jedna wskazówka może zmienić [problem] w [pożądany rezultat].", "porady"], ["Nie zaczynaj [typowego zadania], dopóki nie poznasz tej tajnej sztuczki!", "porady"], ["Oto, czego nikt ci nie powie na temat uzyskania [pożądanego rezultatu].", "ciekawosc"], ["Chcesz osiągnąć [pożądany rezultat] bez wydawania fortuny? Spróbuj tego.", "porady"], ["Jak w końcu pokonać [ból] i zobaczyć prawdziwy postęp.", "porady"], ["Czego chciałbym się dowiedzieć zanim spróbuję uzyskać [pożądany rezultat].", "porady"], ["Jeśli zmagasz się z [problem], musisz to zobaczyć.", "porady"], ["Zaskakująca prawda o tym, dlaczego [pożądany wynik] był tak trudny do osiągnięcia.", "mity"], ["Oto jak sprawić, aby [pożądany rezultat] stał się częścią Twojej codziennej rutyny.", "porady"], ["Założę się, że nie wiedziałeś, że to może rozwiązać [problem].", "ciekawosc"], ["Jeśli wykonujesz [typowe zadanie] źle, zaoszczędzi ci to czasu i wysiłku.", "porady"], ["Nie potrzebujesz [powszechnego przekonania], aby uzyskać [pożądany wynik] — oto, czego naprawdę potrzebujesz.", "porady"], ["Czy kiedykolwiek czułaś, że [problem] Cię powstrzymuje? Ta strategia może to zmienić.", "porady"], ["Oto jak przekształciłam [problem] w [pożądany rezultat] — i Ty też możesz to zrobić.", "historia"], ["Sekret osiągnięcia [pożądanego rezultatu] bez wysiłku.", "porady"], ["Oto powód, dla którego jeszcze nie widzisz [oczekiwanego rezultatu] i jak to naprawić.", "porady"], ["Czy kiedykolwiek chciałeś osiągnąć [pożądany rezultat] bez [zwykłych zmagań]? Teraz możesz.", "porady"], ["Właśnie znalazłam X, który robi X.", "recenzje"], ["Szczerze mówiąc, nie mogę uwierzyć, że to kosztuje tylko X.", "recenzje"], ["Szczerze mówiąc, nie wierzę, że to robi X.", "recenzje"], ["Ciągle widzę te X od X w całym swoim kanale, więc musiałam spróbować.", "recenzje"], ["Rzeczy, o których chciałbym wiedzieć wcześniej, część X.", "ciekawosc"], ["POV (tylko tekst i wideo).", "ciekawosc"], ["Chłopaki, to działa tak dobrze i wygląda tak pięknie (efekt końcowy, potem problem + ból).", "recenzje"], ["To jedna z moich ulubionych marek X (rozpakowywanie i użytkowanie).", "recenzje"], ["Produkt na stronie internetowej kontra produkt w rzeczywistości.", "recenzje"], ["Szalone narzędzie robi X", "recenzje"], ["X Chciałbym wiedzieć zanim zacząłem Y", "ciekawosc"], ["Najlepszy sposób na zrobienie X w 2026 r....", "ciekawosc"], ["Ten X zmieni Twoje życie", "recenzje"], ["Najtańszy sposób na X", "recenzje"], ["Sekretny trik na [X]", "ciekawosc"], ["X Hack (hack) Legalnie", "kontrowersje"], ["Czy to jest zbyt piękne, żeby było prawdziwe?", "recenzje"], ["Jak mój 13-latek zostanie milionerem", "porady"], ["Oto 3 kroki, które możesz podjąć, aby zapewnić swoim dzieciom sukces finansowy", "porady"], ["MY kontra ONI", "kontrowersje"], ["Rzeczy, o których powinien wiedzieć każdy, kto ma ograniczony budżet", "porady"], ["Zamiast robić/używać X, zrób X.", "porady"], ["Jak zrobić X (coś) wyjaśniono w Y (konkretnym okresie)", "porady"], ["3 najlepsze X dla Y", "porady"], ["Ten X zwali Cię z nóg", "recenzje"], ["Co musisz wiedzieć o X", "porady"], ["Rzeczy, które chciałbym zacząć robić wcześniej", "ciekawosc"], ["Moim największym żalem jest to, że nie spróbowałam tego wcześniej", "ciekawosc"], ["Uwielbiam ____ (biegać, jeździć na rowerze, pływać itp.)", "porady"], ["Mój chłopak wiedział, że mój były musi odejść.", "porady"], ["Jak to możliwe, że (NAZWA PRODUKTU) jest tak dobry?", "recenzje"], ["Czy lubisz uprawiać (AKTYWNOŚĆ ZWIĄZANA Z PRODUKTEM)? (np. pływanie, bieganie, jazda na rowerze itp.)", "porady"], ["3 powody, dla których uwielbiam (NAZWA PRODUKTU) i dlaczego po prostu musiałam kupić kolejny!", "recenzje"], ["Nie mogę uwierzyć, że to działa!", "recenzje"], ["Jedyne, co musisz wiedzieć, żeby zadbać o [X]", "porady"], ["[X] numer jeden dla [Y]", "recenzje"], ["X, którego znajomość wydaje się nielegalna", "kontrowersje"], ["Prawda o X na Y", "mity"], ["Czy znasz ten sekret X (popularnej platformy)?", "ciekawosc"], ["Nie chcesz robić X (czegoś kontrowersyjnego jak „płacenie podatków”)?", "kontrowersje"], ["3 największe błędy, które popełniasz w/robiąc X", "bledy"], ["X, w którego istnienie nie uwierzysz", "ciekawosc"], ["Moje życie bez _______ kontra moje życie z _______", "ciekawosc"], ["Zgodziłyśmy się, prawda? Koniec z ukrywaniem wiedzy!", "porady"], ["Nie uwierzysz, co to jest...", "ciekawosc"], ["Oto najlepsze ______ dla ______, oto dlaczego...", "recenzje"], ["Nie mogę uwierzyć, że to zadziałało!", "recenzje"], ["Ulubieniec wszystkich (NAZWA PRODUKTU/NISZA) powraca na lato", "recenzje"], ["POV: Przymierzanie (NAZWA PRODUKTU) po raz pierwszy", "recenzje"], ["X są nudne! Zamiast tego kup sobie (NAZWA PRODUKTU)!", "recenzje"], ["Zrobiliśmy coś, czego nigdy wcześniej nie robiliśmy...", "ciekawosc"], ["Chcesz osiągnąć [pożądany rezultat] szybciej? To strategia, o której nikt nie mówi.", "porady"], ["Dlaczego [typowe podejście] nie działa w Twoim przypadku i co możesz zrobić zamiast tego.", "porady"], ["Jedna rzecz, która przekształciła mój [problem] w [pożądany rezultat].", "historia"], ["Przestań tracić czas na [nieskuteczną metodę] — zamiast tego wypróbuj tę, aby uzyskać lepsze rezultaty.", "porady"], ["Oto najłatwiejszy sposób na uzyskanie [pożądanego rezultatu] bez poświęcania [typowego wysiłku].", "porady"], ["Odkryj sekret [pożądanego rezultatu]", "wyobraz"], ["Odblokuj ukryty potencjał [konkretnego zasobu]", "wyobraz"], ["Osiągnij [pożądany rezultat] jak profesjonalistka", "wyobraz"], ["Przygotuj się na zaskoczenie [niekonwencjonalną strategią]", "wyobraz"], ["Pożegnaj [ograniczenie] i przywitaj [pożądany rezultat]", "wyobraz"], ["Chcesz wyróżnić się z tłumu? Wypróbuj [unikalny pomysł]", "wyobraz"], ["Dowiedz się, jak pokonać [konkretne wyzwanie] dzięki tym wskazówkom", "wyobraz"], ["Pożegnaj [negatywną emocję] i przyjmij [pozytywne nastawienie]", "wyobraz"], ["Jesteś gotowa wyjść ze swojej strefy komfortu i osiągnąć [pożądany rezultat]?", "wyobraz"], ["Odkryj sprawdzone techniki, dzięki którym osiągniesz [pożądany rezultat]", "wyobraz"], ["Zajrzyj za kulisy i zobacz, jak powstał [konkretny projekt]", "ciekawosc"], ["Odkryj sekrety [konkretnego procesu]", "ciekawosc"], ["Zobacz od kuchni, jak powstało [konkretne dzieło]", "ciekawosc"], ["Pokazuję, ile pracy i zaangażowania kryje się za [konkretnym projektem]", "ciekawosc"], ["Nieopowiedziana historia stojąca za [konkretnym dziełem]", "ciekawosc"], ["Odkryj prosty trik, dzięki któremu rozwiążesz [konkretny problem]", "porady"], ["Pożegnaj [niechcianą sytuację] dzięki temu skutecznemu hackowi!", "porady"], ["Naucz się łatwo pokonywać [konkretne wyzwanie]", "porady"], ["Poznaj rozwiązanie [uporczywego problemu]", "porady"], ["Chcesz ułatwić sobie [konkretne zadanie]? Wypróbuj to rozwiązanie!", "porady"], ["Pożegnaj [frustrujący problem] dzięki tym sprawdzonym technikom", "porady"], ["Chcesz rozwiązać [konkretny problem]? Ta technika działa cuda", "porady"], ["Pożegnaj [irytujący problem] raz na zawsze", "porady"], ["Odkryj przewodnik krok po kroku, jak naprawić [konkretny problem]", "porady"], ["Poznaj sekretną metodę na pokonanie [typowej przeszkody]", "porady"], ["Chcesz, żeby [konkretne zadanie] stało się banalnie proste? Oto rozwiązanie!", "porady"], ["Unikaj [typowych błędów], żeby osiągnąć [pożądany rezultat]", "bledy"], ["Ucz się na moim [konkretnym błędzie] i unikaj go u siebie", "bledy"], ["Największy błąd, jaki ludzie popełniają, [robiąc coś]", "bledy"], ["Odkryj typowe pułapki, których należy unikać w [konkretnym obszarze]", "bledy"], ["Chcesz osiągnąć sukces? Ucz się na błędach, które popełniłam", "bledy"], ["Błąd numer 1, który blokuje [konkretny cel]", "bledy"], ["Poznaj typowe błędy, które sabotują [konkretny rezultat]", "bledy"], ["Największe błędne przekonanie ludzi na temat [konkretnego tematu]", "mity"], ["Typowe błędy, których należy unikać, [robiąc coś]", "bledy"], ["Najbardziej niedoceniany błąd w [konkretnym obszarze]", "bledy"], ["Unikaj tych krytycznych błędów, żeby osiągnąć lepszy [konkretny rezultat]", "bledy"], ["Poznaj typowe błędy, które popełniają początkujące w [niszy]", "bledy"], ["Błąd, który powstrzymuje Cię przed osiągnięciem [pożądanego rezultatu]", "bledy"], ["Główny błąd, który rujnuje [konkretny cel]", "bledy"], ["Typowe błędne przekonania na temat [konkretnego tematu] i prawda o nich", "mity"], ["Odkryj ukryte korzyści [unikalnej strategii]", "ciekawosc"], ["Zaskakująca prawda stojąca za [popularnym trendem] w [konkretnej niszy]", "mity"], ["Przygotuj się na zachwyt nad magią [konkretnej techniki]", "ciekawosc"], ["Prawda o [konkretnym temacie] ujawniona", "mity"], ["Szokująca rzeczywistość [konkretnej sytuacji]", "mity"], ["Poznaj nieoczekiwane korzyści [unikalnego podejścia]", "ciekawosc"], ["Nieznane fakty na temat [konkretnego tematu], które Cię zaskoczą", "ciekawosc"], ["Zaskakujący związek między [niepowiązanymi rzeczami]", "ciekawosc"], ["Historia mojej decyzji, która zmieniła moje życie", "historia"], ["Jak [konkretne wydarzenie] ukształtowało to, kim dziś jestem", "historia"], ["Pożegnaj [częstą frustrację] dzięki tej przełomowej wskazówce!", "porady"], ["Nareszcie rozwiązanie na [konkretny problem], które naprawdę działa", "porady"], ["Nie pozwól, żeby [konkretny problem] dłużej Cię powstrzymywał. Oto, co musisz wiedzieć!", "porady"], ["Masz dość odczuwania [konkretnej negatywnej emocji]? Zacznijmy to zmieniać już dziś!", "porady"], ["Przestań pozwalać, żeby [konkretny problem] kontrolował Twoje życie. Przejmij stery dzięki tym strategiom!", "porady"], ["Wyobraź sobie przyszłość, w której [pożądany rezultat] staje się rzeczywistością", "wyobraz"], ["Zamknij oczy i wyobraź sobie przyszłość, którą chcesz stworzyć... Oto jak to osiągniesz", "wyobraz"], ["Wyobraź sobie świat, w którym [konkretna transformacja] jest normą", "wyobraz"], ["Wyobraź sobie, jaki wpływ możesz mieć, [robiąc coś konkretnego]", "wyobraz"], ["Wyobraź sobie szczęście i spełnienie, które przynosi [konkretny rezultat]", "wyobraz"], ["Wyobraź sobie przyszłość, w której [konkretne wyzwanie] już Cię nie powstrzymuje", "wyobraz"], ["Wyobraź sobie, jaki wpływ możesz mieć na [konkretną społeczność/branżę]", "wyobraz"], ["Jak pokonałam swoje lęki i osiągnęłam [konkretny sukces]", "historia"], ["Czy [nazwa produktu] jest wart szumu wokół niego? Oto moja szczera recenzja", "recenzje"], ["Przygotuj się na szczegółową recenzję [nazwy produktu]", "recenzje"], ["Poznaj plusy i minusy [nazwy produktu]", "recenzje"], ["Czy [nazwa produktu] to rozwiązanie, na które czekałaś? Sprawdź to", "recenzje"], ["Rozpakowanie i recenzja [nazwy produktu]: moje pierwsze wrażenia", "recenzje"], ["Wystawiłam [nazwę produktu] na próbę. Oto moje wnioski i wyniki", "recenzje"], ["Czy [nazwa produktu] jest wart swojej ceny? Obejrzyj tę recenzję, zanim kupisz", "recenzje"], ["Prawda o [nazwie produktu]: moja obiektywna recenzja i rekomendacja", "recenzje"], ["Szczerze: moje doświadczenie z [nazwą produktu] i czy warto w niego zainwestować", "recenzje"], ["Czy [nazwa produktu] to przełom, czy tylko chwyt marketingowy? Oto moja recenzja", "recenzje"], ["Zobacz od kuchni [nazwę produktu]: co dobre, co złe i werdykt", "recenzje"], ["Czy warto zainwestować w [nazwę produktu]? Sprawdź w tej szczegółowej recenzji", "recenzje"], ["Recenzja bez filtrów: moje doświadczenie z [nazwą produktu]", "recenzje"], ["Ostateczna recenzja [nazwy produktu]: wszystko, co musisz wiedzieć", "recenzje"], ["Czy [nazwa produktu] to odpowiedź na Twój [konkretny problem]? Obejrzyj tę recenzję", "recenzje"], ["Czy [nazwa produktu] to must-have, czy raczej rezygnacja? Moja recenzja ujawni prawdę", "recenzje"], ["Nie przegap oferty ograniczonej czasowo na [produkt/usługę]", "recenzje"], ["Poznaj [produkt/usługę], która odmieni Twoje życie", "recenzje"], ["Dołącz do rewolucji [produktu/usługi] i nigdy się nie oglądaj za siebie", "recenzje"], ["Dowiedz się, dlaczego wszyscy zachwycają się naszym [produktem/usługą]", "recenzje"], ["Dołącz do społeczności zadowolonych klientek korzystających z naszego [produktu/usługi]", "recenzje"], ["Więcej [X] NIE oznacza więcej [pożądanego rezultatu]", "mity"], ["Nie daj się nabrać na mit, że [konkretne błędne przekonanie]", "mity"], ["Obalam powszechne przekonanie, że [konkretne błędne przekonanie]", "mity"], ["Wbrew powszechnej opinii, [konkretne błędne przekonanie]", "mity"], ["Zaskakująca prawda o [konkretnym błędnym przekonaniu]", "mity"], ["Prawda, którą musisz poznać o [konkretnym błędnym przekonaniu]", "mity"], ["Nie daj się zwieść mitowi, że [konkretne błędne przekonanie]", "mity"], ["Prawda obalająca mit na temat [konkretnego błędnego przekonania]", "mity"]];
+
+(function () {
+  /* Daylight fabric behind the cover: same folds as the catalog, warm palette. */
+  var cv = document.getElementById('fabric'), ctx = cv.getContext('2d');
+  var W = 0, H = 0, t = 0, last = 0, visible = true;
+  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var css = getComputedStyle(document.documentElement), pal;
+  function hex(v) { v = v.trim().replace('#', ''); return [parseInt(v.slice(0, 2), 16), parseInt(v.slice(2, 4), 16), parseInt(v.slice(4, 6), 16)]; }
+  function readPal() { css = getComputedStyle(document.documentElement); pal = { a: hex(css.getPropertyValue('--fold-a')), b: hex(css.getPropertyValue('--fold-b')), c: hex(css.getPropertyValue('--fold-c')), d: hex(css.getPropertyValue('--fold-deep')), bg: hex(css.getPropertyValue('--bg')) }; }
+  function mix(a, b, k) { return [0, 1, 2].map(function (i) { return Math.round(a[i] + (b[i] - a[i]) * k); }); }
+  function rgb(c, a) { return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+  function size() { var dpr = Math.min(window.devicePixelRatio || 1, 1.5); W = cv.clientWidth; H = cv.clientHeight; cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  function edge(x0, y, i, ph) { return x0 + Math.sin(y * 0.006 + ph + i * 0.7) * 24 + Math.sin(y * 0.013 - ph * 1.3 + i) * 10; }
+  function draw() {
+    ctx.fillStyle = rgb(pal.bg, 1); ctx.fillRect(0, 0, W, H);
+    var K = Math.max(14, Math.round(W / 50)), fw = W / K * 1.9, ph = t;
+    for (var i = -2; i < K + 2; i++) {
+      var x0 = i * (W / K);
+      var centre = 1 - Math.min(1, Math.abs((x0 + fw / 2) - W * 0.62) / (W * 0.6));
+      var lit = mix(pal.a, pal.c, Math.pow(centre, 2.2) * 0.75);
+      ctx.beginPath();
+      var step = 18, y;
+      ctx.moveTo(edge(x0, -40, i, ph), -40);
+      for (y = -40; y <= H + step; y += step) ctx.lineTo(edge(x0, y, i, ph), y);
+      for (y = H + step; y >= -40; y -= step) ctx.lineTo(edge(x0 + fw, y, i + 0.5, ph * 0.9), y);
+      ctx.closePath();
+      var g = ctx.createLinearGradient(x0, 0, x0 + fw, 0);
+      g.addColorStop(0, rgb(pal.d, 0.9)); g.addColorStop(0.45, rgb(lit, 1)); g.addColorStop(0.6, rgb(mix(lit, pal.b, 0.6), 1)); g.addColorStop(1, rgb(pal.d, 0.9));
+      ctx.fillStyle = g; ctx.fill();
+    }
+  }
+  function loop(ts) { if (visible && ts - last > 40) { var dt = last ? ts - last : 0; t += dt / 5200; draw(); last = ts; } else if (!visible) { last = 0; } requestAnimationFrame(loop); }
+  readPal(); size(); draw();
+  addEventListener('resize', function () { size(); draw(); });
+  if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { readPal(); draw(); });
+  new MutationObserver(function () { readPal(); draw(); }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; }).observe(cv);
+  if (!still) requestAnimationFrame(loop);
+})();
+
+(function () {
+  var CATS = [
+    ['all', 'Wszystkie'], ['fav', '♡ Ulubione'],
+    ['sprzedaz', 'Sprzedaż bez twarzy'], ['ciekawosc', 'Ciekawość i sekrety'], ['stop', 'Zatrzymaj scroll'],
+    ['historia', 'Storytelling'], ['porady', 'Porady i triki'], ['bledy', 'Błędy'], ['mity', 'Mity i prawda'],
+    ['kontrowersje', 'Kontrowersje'], ['recenzje', 'Produkty i recenzje'], ['wyobraz', 'Wyobraź sobie']
+  ];
+  var NAME = {}; CATS.forEach(function (c) { NAME[c[0]] = c[1]; });
+  var list = HOOKS.map(function (h, i) { return { id: i + 1, t: h[0], c: h[1], n: norm(h[0] + ' ' + NAME[h[1]]) }; });
+  var grid = document.getElementById('grid'), q = document.getElementById('q'), chips = document.getElementById('chips');
+  var nEl = document.getElementById('n'), label = document.getElementById('label'), toast = document.getElementById('toast');
+  var spot = document.getElementById('spot'), spotText = document.getElementById('spotText');
+  var cat = 'all', favs = {}, spotHook = null, toastT;
+  try { favs = JSON.parse(localStorage.getItem('createon-hooki-fav') || '{}') || {}; } catch (e) { favs = {}; }
+  function saveFavs() { try { localStorage.setItem('createon-hooki-fav', JSON.stringify(favs)); } catch (e) {} }
+
+  function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l'); }
+  function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  var PH = /(\[[^\]]+\]|_{2,}|—{2,})/g;
+  function fmt(text, query) {
+    return text.split(PH).map(function (part, i) {
+      if (i % 2) return '<span class="ph">' + esc(part) + '</span>';
+      if (!query) return esc(part);
+      var np = norm(part), out = '', a = 0, j;
+      while ((j = np.indexOf(query, a)) !== -1) { out += esc(part.slice(a, j)) + '<mark>' + esc(part.slice(j, j + query.length)) + '</mark>'; a = j + query.length; }
+      return out + esc(part.slice(a));
+    }).join('');
+  }
+  function count(c) { return c === 'all' ? list.length : c === 'fav' ? Object.keys(favs).length : list.filter(function (h) { return h.c === c; }).length; }
+  function drawChips() {
+    chips.innerHTML = CATS.map(function (c) { return '<button type="button" class="chip' + (c[0] === cat ? ' active' : '') + '" data-c="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + c[1] + ' <em>' + count(c[0]) + '</em></button>'; }).join('');
+  }
+  var HEART = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+  function render() {
+    var qq = norm(q.value.trim());
+    var shown = list.filter(function (h) { return (cat === 'all' || (cat === 'fav' ? favs[h.id] : h.c === cat)) && (!qq || h.n.indexOf(qq) !== -1); });
+    nEl.textContent = shown.length;
+    label.textContent = NAME[cat].replace('♡ ', '');
+    if (!shown.length) {
+      grid.innerHTML = cat === 'fav' && !qq
+        ? '<div class="empty">Nie masz jeszcze ulubionych hooków. Kliknij serduszko przy hooku, a pojawi się tutaj.<br><button type="button" data-reset>Pokaż wszystkie</button></div>'
+        : '<div class="empty">Brak hooków dla „' + esc(q.value.trim()) + '”. Spróbuj innego słowa.<br><button type="button" data-reset>Pokaż wszystkie</button></div>';
+      return;
+    }
+    grid.innerHTML = shown.map(function (h) {
+      var on = !!favs[h.id];
+      return '<article class="card" data-id="' + h.id + '"><div class="meta"><span class="no">#' + (h.id < 10 ? '00' : h.id < 100 ? '0' : '') + h.id + '</span><span class="cat">' + NAME[h.c] + '</span></div>' +
+        '<p class="text">' + fmt(h.t, qq) + '</p>' +
+        '<div class="acts-row"><button type="button" class="copy">Kopiuj hook</button><button type="button" class="fav" aria-pressed="' + on + '" aria-label="' + (on ? 'Usuń z ulubionych' : 'Dodaj do ulubionych') + '">' + HEART + '</button></div></article>';
+    }).join('');
+  }
+  function setCat(c) { cat = c; drawChips(); render(); }
+  function say(msg) { toast.textContent = msg; toast.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(function () { toast.classList.remove('show'); }, 2000); }
+  function copy(text, btn, idle) {
+    function ok() { say('Hook skopiowany. Uzupełnij pola i wstaw do rolki.'); if (btn) { btn.classList.add('done'); btn.textContent = 'Skopiowano'; setTimeout(function () { btn.classList.remove('done'); btn.textContent = idle; }, 1600); } }
+    function no(el) { say('Tekst zaznaczony. Skopiuj go skrótem Cmd+C / Ctrl+C.'); }
+    try { navigator.clipboard.writeText(text).then(ok, function () { select(btn); no(); }); } catch (e) { select(btn); no(); }
+  }
+  function select(btn) { var p = btn && (btn.closest('.card') || spot).querySelector('.text, #spotText'); if (!p) return; var r = document.createRange(); r.selectNodeContents(p); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  chips.addEventListener('click', function (e) { var b = e.target.closest('.chip'); if (!b) return; setCat(b.dataset.c); b.scrollIntoView({ block: 'nearest', inline: 'center' }); });
+  q.addEventListener('input', render);
+  grid.addEventListener('click', function (e) {
+    if (e.target.closest('[data-reset]')) { q.value = ''; setCat('all'); return; }
+    var card = e.target.closest('.card'); if (!card) return;
+    var h = list[card.dataset.id - 1];
+    if (e.target.closest('.copy')) copy(h.t, e.target.closest('.copy'), 'Kopiuj hook');
+    var f = e.target.closest('.fav');
+    if (f) {
+      if (favs[h.id]) delete favs[h.id]; else favs[h.id] = 1;
+      saveFavs(); var on = !!favs[h.id];
+      f.setAttribute('aria-pressed', on); f.setAttribute('aria-label', on ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
+      say(on ? 'Dodano do ulubionych.' : 'Usunięto z ulubionych.');
+      drawChips(); if (cat === 'fav') render();
+    }
+  });
+
+  function pick() {
+    var pool = list.filter(function (h) { return cat === 'all' || cat === 'fav' ? true : h.c === cat; });
+    if (cat === 'fav' && Object.keys(favs).length) pool = list.filter(function (h) { return favs[h.id]; });
+    spotHook = pool[Math.floor(Math.random() * pool.length)];
+    spotText.innerHTML = fmt(spotHook.t, '');
+    spot.hidden = false;
+  }
+  document.getElementById('shuffle').addEventListener('click', function () { pick(); spot.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); });
+  document.getElementById('spotNext').addEventListener('click', pick);
+  document.getElementById('spotClose').addEventListener('click', function () { spot.hidden = true; });
+  document.getElementById('spotCopy').addEventListener('click', function (e) { if (spotHook) copy(spotHook.t, e.currentTarget, 'Kopiuj hook'); });
+
+  setCat('all');
+})();
+</script>
+
+</body>
+</html>
